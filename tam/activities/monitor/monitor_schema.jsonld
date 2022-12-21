@@ -1,11 +1,11 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Activity",
-    "@id": "preprocessing_schema.jsonld",
+    "@id": "monitor_schema.jsonld",
     "prefLabel": {
-        "en": "Preprocessing"
+        "en": "Monitor"
     },
-    "description": "preprocessing",
+    "description": "monitor",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "preamble": {
@@ -14,14 +14,15 @@
     "ui": {
         "shuffle": false,
         "order": [
-            "items/artefact_detection.jsonld",
-            "items/pupil_aggregation_method.jsonld",
-            "items/pupil_algorithm.jsonld"
+            "items/type.jsonld",
+            "items/resolution.jsonld",
+            "items/screen_size.jsonld",
+            "items/screen_refresh_rate_software.jsonld"
         ],
         "addProperties": [
             {
-                "variableName": "artefact_detection",
-                "isAbout": "items/artefact_detection.jsonld",
+                "variableName": "type",
+                "isAbout": "items/type.jsonld",
                 "isVis": "long_form == 1",
                 "requiredValue": false,
                 "allow": [
@@ -29,17 +30,26 @@
                 ]
             },
             {
-                "variableName": "pupil_aggregation_method",
-                "isAbout": "items/pupil_aggregation_method.jsonld",
-                "isVis": "long_form == 1",
+                "variableName": "resolution",
+                "isAbout": "items/resolution.jsonld",
+                "isVis": true,
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "pupil_algorithm",
-                "isAbout": "items/pupil_algorithm.jsonld",
+                "variableName": "screen_size",
+                "isAbout": "items/screen_size.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "screen_refresh_rate_software",
+                "isAbout": "items/screen_refresh_rate_software.jsonld",
                 "isVis": "long_form == 1",
                 "requiredValue": false,
                 "allow": [
