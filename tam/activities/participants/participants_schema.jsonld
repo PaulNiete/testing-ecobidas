@@ -9,58 +9,108 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "preamble": {
-        "en": ""
+        "en": "<p><a href='https://docs.google.com/spreadsheets/d/1Q2qAzP6shVrOnj7IAuNimZs48MyGL-e3W5FpoAsG7Sg/edit?usp=sharing' target='_blank' > Source </a> | <a href='' target='_blank' > Github repository </a> | <a href='' target='_blank' > Reference </a><br><br>Describe your participant sample</p>"
     },
     "ui": {
         "shuffle": false,
         "order": [
-            "items/vision_of_participants.jsonld",
-            "items/proportion_of_women.jsonld",
-            "items/mean_age.jsonld",
-            "items/procedure_to_test_vision.jsonld",
-            "items/color_vision.jsonld"
+            "items/number_of_subjects.jsonld",
+            "items/subject_age_mean.jsonld",
+            "items/subject_age_min.jsonld",
+            "items/subject_age_max.jsonld",
+            "items/handedness.jsonld",
+            "items/proportion_male_subjects.jsonld",
+            "items/inclusion_exclusion_criteria.jsonld",
+            "items/number_of_rejected_subjects.jsonld",
+            "items/group_comparison.jsonld",
+            "items/group_description.jsonld"
         ],
         "addProperties": [
             {
-                "variableName": "vision_of_participants",
-                "isAbout": "items/vision_of_participants.jsonld",
-                "isVis": "long_form == 1",
+                "variableName": "number_of_subjects",
+                "isAbout": "items/number_of_subjects.jsonld",
+                "isVis": true,
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "proportion_of_women",
-                "isAbout": "items/proportion_of_women.jsonld",
-                "isVis": "long_form == 1",
+                "variableName": "subject_age_mean",
+                "isAbout": "items/subject_age_mean.jsonld",
+                "isVis": true,
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "mean_age",
-                "isAbout": "items/mean_age.jsonld",
-                "isVis": "long_form == 1",
+                "variableName": "subject_age_min",
+                "isAbout": "items/subject_age_min.jsonld",
+                "isVis": true,
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "procedure_to_test_vision",
-                "isAbout": "items/procedure_to_test_vision.jsonld",
-                "isVis": "long_form == 1",
+                "variableName": "subject_age_max",
+                "isAbout": "items/subject_age_max.jsonld",
+                "isVis": true,
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "color_vision",
-                "isAbout": "items/color_vision.jsonld",
-                "isVis": "long_form == 1",
+                "variableName": "handedness",
+                "isAbout": "items/handedness.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "proportion_male_subjects",
+                "isAbout": "items/proportion_male_subjects.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "inclusion_exclusion_criteria",
+                "isAbout": "items/inclusion_exclusion_criteria.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "number_of_rejected_subjects",
+                "isAbout": "items/number_of_rejected_subjects.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "group_comparison",
+                "isAbout": "items/group_comparison.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "group_description",
+                "isAbout": "items/group_description.jsonld",
+                "isVis": "group_comparison == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
