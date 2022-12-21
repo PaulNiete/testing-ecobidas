@@ -1,0 +1,67 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "offline_lowpass_filter_additional.jsonld",
+    "prefLabel": {
+        "en": "offline lowpass filter additional"
+    },
+    "description": "offline lowpass filter additional",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "5.35 - Do you want to report any of these other additional offline low-pass filter properties?<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>These properties are not required by recommendations for good practice by Keil et al. (2014), but they may help other researchers reproduce your filters if you know them.</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 6,
+        "choices": [
+            {
+                "name": {
+                    "en": "attenuation in the stopband"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "transition bandwidth"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "passband ripple"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "filter direction"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "filter delay"
+                },
+                "value": 4
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 5
+            },
+            {
+                "name": {
+                    "en": "none of the above"
+                },
+                "value": 6
+            }
+        ],
+        "multipleChoice": true
+    }
+}

@@ -1,0 +1,73 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "non-EEG_electrodes.jsonld",
+    "prefLabel": {
+        "en": "non-EEG electrodes"
+    },
+    "description": "non-EEG electrodes",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "3.17 - Which other electrodes were used for recording?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 7,
+        "choices": [
+            {
+                "name": {
+                    "en": "VEOG above left eye"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "VEOG below left eye"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "VEOG above right eye"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "VEOG below right eye"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "left HEOG"
+                },
+                "value": 4
+            },
+            {
+                "name": {
+                    "en": "right HEOG"
+                },
+                "value": 5
+            },
+            {
+                "name": {
+                    "en": "an electrode used to make balanced noncephalic reference"
+                },
+                "value": 6
+            },
+            {
+                "name": {
+                    "en": "other electrodes"
+                },
+                "value": 7
+            }
+        ],
+        "multipleChoice": true
+    }
+}

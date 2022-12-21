@@ -1,0 +1,28 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "offline_highpass_filter_transition.jsonld",
+    "prefLabel": {
+        "en": "offline highpass filter transition"
+    },
+    "description": "offline highpass filter transition",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "5.23 - Offline high-pass filter transition bandwidth"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "Hz"
+                },
+                "value": "Hz"
+            }
+        ]
+    }
+}

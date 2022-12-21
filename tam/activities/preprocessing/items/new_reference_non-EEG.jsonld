@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "new_reference_non-EEG.jsonld",
+    "prefLabel": {
+        "en": "new reference non-EEG"
+    },
+    "description": "new reference non-EEG",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "5.65 - What was the new other non-EEG reference?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "the same reference as EEG electrodes"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "no other non-EEG electrodes were used"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": false
+    }
+}

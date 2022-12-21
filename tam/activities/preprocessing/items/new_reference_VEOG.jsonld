@@ -1,0 +1,49 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "new_reference_VEOG.jsonld",
+    "prefLabel": {
+        "en": "new reference VEOG"
+    },
+    "description": "new reference VEOG",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "5.59 - What was the new VEOG reference?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 3,
+        "choices": [
+            {
+                "name": {
+                    "en": "bipolar (lower - upper VEOG)"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "the same reference as EEG electrodes"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "VEOG was not recorded"
+                },
+                "value": 3
+            }
+        ],
+        "multipleChoice": false
+    }
+}

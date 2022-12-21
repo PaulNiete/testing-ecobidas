@@ -1,0 +1,55 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "new_reference_HEOG.jsonld",
+    "prefLabel": {
+        "en": "new reference HEOG"
+    },
+    "description": "new reference HEOG",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "5.62 - What was the new HEOG reference?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 4,
+        "choices": [
+            {
+                "name": {
+                    "en": "bipolar (left - right HEOG)"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "bipolar (right - left HEOG)"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "the same reference as EEG electrodes"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "HEOG was not recorded"
+                },
+                "value": 4
+            }
+        ],
+        "multipleChoice": false
+    }
+}
